@@ -11,7 +11,11 @@
 
 ---
 
-#### Question
+### Question
+
+#### QuestionRepository
+
+#### Question(Entity)
 
 |속성명| 설명          |
 |---|-------------|
@@ -20,7 +24,12 @@
 |content| 	질문의 내용     |
 |create_date| 	질문을 작성한 일시 |
 
-#### Answer
+
+### Answer
+
+#### AnswerRepository
+
+#### Answer(Entity)
 
 |속성명| 설명       |
 |---|----------|
