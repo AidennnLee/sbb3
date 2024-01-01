@@ -51,6 +51,17 @@
 |content| 	답변의 내용  |
 |create_date| 답변을 작성한 일시 |
 
+### template
+
+#### question
+
+- question_list
+- question_detail
+
+### Exception
+
+- DataNotFoundException
+
 ## 메모
 
 ---

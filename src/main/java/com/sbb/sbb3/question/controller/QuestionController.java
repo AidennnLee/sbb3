@@ -1,14 +1,13 @@
 package com.sbb.sbb3.question.controller;
 
 import com.sbb.sbb3.question.entity.Question;
-import com.sbb.sbb3.question.repository.QuestionRepository;
 import com.sbb.sbb3.question.service.QuestionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
 
@@ -24,6 +23,14 @@ public class QuestionController {
         List<Question> questionList = questionService.getList();
         model.addAttribute("questionList", questionList);
 
-        return "question_list";
+        return "question/question_list";
+    }
+
+    @GetMapping("/detail/{id}")
+    public String detail(Model model, @PathVariable("id") Integer id){
+        Question question = this.questionService.getQuestion(id);
+        model.addAttribute("question", question);
+
+        return "question/question_detail";
     }
 }
