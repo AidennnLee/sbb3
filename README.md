@@ -11,9 +11,20 @@
 
 ---
 
-### Question
+### home
+
+#### Home Controller
+
+- ("/")
+- ("/sbb")
+
+### question
 
 #### QuestionController
+
+- ("/question/list")
+
+#### QuestionService
 
 #### QuestionRepository
 
@@ -27,7 +38,7 @@
 |create_date| 	질문을 작성한 일시 |
 
 
-### Answer
+### answer
 
 #### AnswerRepository
 
