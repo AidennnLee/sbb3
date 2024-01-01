@@ -11,4 +11,9 @@ public class HomeController {
     public String home(){
         return "Hello SBB";
     }
+
+    @GetMapping("/")
+    public String root(){
+        return "redirect:/question/list";
+    }
 }
