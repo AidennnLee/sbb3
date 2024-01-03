@@ -61,8 +61,12 @@
 
 #### question
 
-- question_list
-- question_detail
+- question_list.html
+- question_detail.html
+
+#### global
+
+- layout.html
 
 ### Exception
 
