@@ -22,7 +22,9 @@
 
 #### QuestionController
 
-- ("/question/list")
+- @GetMapping("/question/list")
+- @GetMapping("/question/create")
+- @GetMapping("/question/detail/{id}")
 
 #### QuestionService
 
@@ -42,7 +44,7 @@
 
 #### AnswerController
 
-- ("answer/create/{id}")
+- @PostMapping("answer/create/{id}")
 
 #### AnswerService
 
@@ -61,12 +63,13 @@
 
 #### question
 
-- question_list.html
-- question_detail.html
+- question_list
+- question_detail
+- question_form
 
 #### global
 
-- layout.html
+- layout
 
 ### Exception
 
