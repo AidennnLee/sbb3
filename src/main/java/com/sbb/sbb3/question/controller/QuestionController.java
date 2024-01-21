@@ -1,6 +1,6 @@
 package com.sbb.sbb3.question.controller;
 
-import com.sbb.sbb3.question.QuestionForm;
+import com.sbb.sbb3.question.form.QuestionForm;
 import com.sbb.sbb3.question.entity.Question;
 import com.sbb.sbb3.question.service.QuestionService;
 import jakarta.validation.Valid;
@@ -10,8 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RequiredArgsConstructor
 @Controller
@@ -37,8 +35,8 @@ public class QuestionController {
     }
 
     @GetMapping("/create")
-    public String questionCreate(){
-        return "question/question_from";
+    public String questionCreate(QuestionForm questionForm){
+        return "question/question_form";
     }
 
     @PostMapping("/create")

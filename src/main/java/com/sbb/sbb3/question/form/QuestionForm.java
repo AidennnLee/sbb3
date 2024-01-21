@@ -1,4 +1,4 @@
-package com.sbb.sbb3.question;
+package com.sbb.sbb3.question.form;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
