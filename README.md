@@ -30,6 +30,8 @@
 
 #### QuestionRepository
 
+#### QuestionForm
+
 #### Question(Entity)
 
 |속성명| 설명          |
@@ -38,7 +40,6 @@
 |subject| 	질문의 제목     |
 |content| 	질문의 내용     |
 |create_date| 	질문을 작성한 일시 |
-
 
 ### answer
 
@@ -50,6 +51,8 @@
 
 #### AnswerRepository
 
+#### AnswerForm
+
 #### Answer(Entity)
 
 |속성명| 설명       |
@@ -58,6 +61,24 @@
 |subject| 	답변의 제목  |
 |content| 	답변의 내용  |
 |create_date| 답변을 작성한 일시 |
+
+### member
+
+#### MemberController
+
+#### MemberService
+
+#### MemberRepository
+
+#### MemberCreateForm
+
+#### Member(Entity)
+
+|속성명| 설명      |
+|---|---------|
+|username| 	사용자 이름 |
+|password| 	비밀번호   |
+|email| 	이메일    |
 
 ### template
 
@@ -70,6 +91,8 @@
 #### global
 
 - layout
+- navbar
+- form_errors
 
 ### Exception
 
