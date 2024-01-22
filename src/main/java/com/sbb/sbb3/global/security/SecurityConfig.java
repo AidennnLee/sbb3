@@ -26,7 +26,11 @@ public class SecurityConfig {
                                 XFrameOptionsHeaderWriter.XFrameOptionsMode.SAMEORIGIN)))
                 .formLogin((formLogin) -> formLogin
                         .loginPage("/member/login")
-                        .defaultSuccessUrl("/"));
+                        .defaultSuccessUrl("/"))
+                .logout((logout) -> logout
+                        .logoutRequestMatcher(new AntPathRequestMatcher("/member/logout"))
+                        .logoutSuccessUrl("/")
+                        .invalidateHttpSession(true));
                 return http.build();
     }
 
